@@ -1,746 +1,1015 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Ryan Francis Romano iPortfolio</title>
-    <meta content name="description">
-    <meta content name="keywords">
+  <title>Ryan Francis Romano iPortfolio</title>
+  <meta content name="description">
+  <meta content name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 
-  </head>
+  <style>
+    .portfolio-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio-wrap img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .portfolio-wrap:hover img {
+      transform: scale(1.1);
+    }
+    .view-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 10;
+    }
+    .view-btn:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+    .fullscreen-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .fullscreen-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
 
-  <body>
+<body>
+  <i class="bx bx-menu mobile-nav-toggle"></i>
 
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="d-flex flex-column">
-
-        <div class="profile">
-          <img src="assets/img/photo_2024-05-18_00-27-24.jpg" alt
-            class="img-fluid rounded-circle">
-          <h1 class="text-light"><a href="index.html">Ryan Francis
-              Romano</a></h1>
-          <div class="social-links mt-3 text-center">
-            <a href="https://www.facebook.com/Ahyanromano/" class="facebook"
-              target="_blank"><i
-                class="bx bxl-facebook"></i></a>
-            <a href="https://x.com/ahyanromano2" class="twitter"
-              target="_blank"><i
-                class="bx bxl-twitter"></i></a>
-            <a href="https://www.instagram.com/hyanromano/" class="instagram"
-              target="_blank"><i
-                class="bx bxl-instagram"></i></a>
-            <a href="https://www.twitch.tv/akakuroichika" class="twitch"
-              target="_blank"><i
-                class="bx bxl-twitch"></i></a>
-            <a href="https://www.youtube.com/channel/UCDC2nlrfNMLCMhjyhrXm9nA"
-              class="youtube" target="_blank"><i
-                class="bx bxl-youtube"></i></a>
-          </div>
+  <header id="header">
+    <div class="flex-column">
+      <div class="profile">
+        <img src="assets/img/Ahyan Romano.png" alt class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Ryan Francis Romano</a></h1>
+        <div class="social-links text-center">
+          <a href="https://www.facebook.com/Ahyanromano" class="facebook" target="_blank"><i
+              class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/hyanromano/" class="instagram" target="_blank"><i
+              class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/Ahyan3" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/ahyan-romano-ph/" class="linkedin" target="_blank"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://www.behance.net/ahyanromanoph" class="behance" target="_blank"><i
+              class="bx bxl-behance"></i></a>
         </div>
-
-        <nav id="navbar" class="nav-menu navbar">
-          <ul>
-            <li><a href="#hero" class="nav-link scrollto active"><i
-                  class="bx bx-home"></i> 
-                  <span>Home</span></a></li>
-            <li><a href="#about" class="nav-link scrollto"><i
-                  class="bx bx-user"></i> 
-                  <span>About</span></a></li>
-            <li><a href="#resume" class="nav-link scrollto"><i
-                  class="bx bx-file-blank"></i> 
-                  <span>Resume</span></a></li>
-            <li><a href="#portfolio" class="nav-link scrollto"><i
-                  class="bx bx-book-content"></i>
-                <span>Portfolio</span></a></li>
-            <li><a href="#contact" class="nav-link scrollto"><i
-                  class="bx bx-envelope"></i> 
-                  <span>Contact</span></a></li>
-          </ul>
-        </nav><!-- .nav-menu -->
       </div>
-    </header><!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero"
-      class="d-flex flex-column justify-content-center align-items-center">
-      <div class="hero-container" data-aos="fade-in">
-        <h1>Ryan Francis Romano</h1>
-        <p>I'm a <span class="typed"
-            data-typed-items="Photographer, Designer, Freelancer, Programmer"></span></p>
-      </div>
-    </section><!-- End Hero -->
+      <nav id="navbar" class="nav-menu">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
 
-    <main id="main">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="flex-column justify-center align-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Ryan Francis Romano</h1>
+      <p>I'm a <span class="typed" data-typed-items="Photographer, Graphic Designer, Programmer, Video Editor"></span>
+      </p>
+    </div>
+  </section><!-- End Hero -->
 
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container">
+  <main id="main">
 
-          <div class="section-title">
-            <h2>About</h2>
-            <p>
-
-              Ryan is a second-year colleges student at the Mabini Colleges, Inc
-              studying
-              concepts, theories, algorithmic foundations, implementation and
-              application of information and computing solutions.
-              He shares his core values, leadership philosophy, and interests in
-              tech, music, and games.</p>
-
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-right">
-              <img src="assets/img/photo_2024-05-18_00-22-20.jpg" class="img-fluid" alt>
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3> Student </h3>
-              <p class="fst-italic">
-
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Birthday:</strong> <span>April 08 2004</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Civil
-                        Status:</strong> <span>Single</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Website:</strong>
-                      <span>behance.net/ahyanromano</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Phone:</strong> <span>+63 948 1286 832</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>
-                        Address:</strong> <span>Alawihao, Daet, Camarines
-                        Norte</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Hometown:</strong> <span>Bacacay,
-                        Albay</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Age:</strong> <span>20</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Sex:</strong> <span>Male</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Degree:</strong> <span>Master</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>School:</strong> <span>Mabini Collges,
-                        Inc.</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Subject:</strong> <span>GV 101</span></li>
-                    <li><i class="bi bi-chevron-right"></i>
-                      <strong>Instructor:</strong> <span>Rainell John
-                        Abanto</span></li>
-                  </ul>
-                </div>
-              </div>
-              <p>
-                I showcase a strong work ethic and dedication to my academic
-                pursuits through my portfolio, highlighting my relentless drive
-                to study hard and excel in my coursework
-              </p>
-            </div>
-          </div>
-
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Ryan is a college student at Mabini Colleges, Inc., studying information technology and graphic design. He
+            learns about concepts, theories, algorithms, and how to create computing and design solutions. Ryan is
+            passionate about tech, music, and games, and he shares his core values and leadership philosophy through his
+            work.</p>
         </div>
-      </section><!-- End About Section -->
 
-      <!-- ======= Skills Section ======= -->
-      <section id="skills" class="skills section-bg">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Skills</h2>
-            <p>Throughout my portfolio, you will notice my dedication to
-              expanding my skills and knowledge base,
-              as I believe in the importance of continuously learning and
-              adapting to new challenges that allows me to absorb new
-              information quickly and effectively.</p>
+        <div class="grid">
+          <div class="grid-item image" data-aos="fade-right">
+            <img src="assets/img/profile.jpg" class="img-fluid" alt>
           </div>
-
-          <div class="row skills-content">
-
-            <div class="col-lg-6" data-aos="fade-up">
-
-              <div class="progress">
-                <span class="skill">HTML <i class="val">30%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="30" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JAVA <i class="val">35%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="35" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">MySQL <i class="val">25%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Visual Basic.NET <i
-                    class="val">45%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="45" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="progress">
-                <span class="skill">Adobe Illustrator <i
-                    class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Adobe Photoshop <i
-                    class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="55" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Cupcat <i class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Powerpoint <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar"
-                    aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section><!-- End Skills Section -->
-
-      <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Resume</h2>
-            <p>
-              As a BSCS student, I am eager to showcase my ability to work smart
-              and efficiently, utilizing strategic thinking
-              and problem-solving skills to achieve optimal results. I excel at
-              doing tasks within the given time while studying
-              under pressure, demonstrating my capacity to handle multiple
-              responsibilities simultaneously without compromising on
-              quality.</p>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-up">
-              <h3 class="resume-title">Summary</h3>
-              <div class="resume-item pb-0">
-                <h4>Ryan Romano</h4>
-                <p><em>As a new graphic designer with a strong foundation in
-                    design principles and a passion for creating visually
-                    appealing content,
-                    I am eager to collaborate with a team to help bring brands
-                    to life through innovative designs.</em></p>
+          <div class="grid-item content" data-aos="fade-left">
+            <h3>Student</h3>
+            <h3>‎ </h3>
+            <div class="grid">
+              <div class="grid-item">
                 <ul>
-                  <li>Alawihao, Daet, Camarines Norte, Ph</li>
-                  <li>+63 948 1286 832</li>
-                  <li>https://www.behance.net/ahyanromano</li>
-                </ul>
-              </div>
-
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Elementary</h4>
-                <h5>2011 - 2016</h5>
-                <p><em>UP Teachers Village Elementary School</em></p>
-                <p><em>Public School, Division of Camarines Norte, Daet North
-                    District</em></p>
-              </div>
-              <div class="resume-item">
-                <h4>Junior High School</h4>
-                <h5>2017 - 2020</h5>
-                <p><em>Alawihao National High School</em></p>
-                <p><em>Vinisitahan National High School </em></p>
-                <p>Public School, Division of Albay, Bacacay</p>
-                <p>A government secondary school that adheres to the standards
-                  mandated by the Department of Education</p>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="resume-item">
-                <h4>Senior High School</h4>
-                <h5>2020 - 2022</h5>
-                <p><em>Camarines Norte National High School </em></p>
-                <p><em>Camambugan, Daet, Camarines Norte </em></p>
-                <ul>
-                  <li>Learned in the design, development, and implementation of
-                    the graphic, layout, and production communication
-                    materials</li>
-                  <li>Teacher favorite for making research</li>
-                  <li>Honored student within 1st to 3rd quarter</li>
-                  <li>Learned in Electronic Products Assembly & Servicing NC
-                    II</li>
-
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>College</h4>
-                <h5>2022 - 2023</h5>
-                <p><em>Mabini Colleges, Inc</em></p>
-                <p><em>Gov Panotes Ave, Daet, 4600 Camarines Norte</em></p>
-                <ul>
-                  <li>Created 4+ design presentations and proposals a month for
-                    clients</li>
-                  <li>Developed numerous school activities (photograpy, logos,
-                    brochures, presentations, system, and photo exhibit).</li>
-                  <li>Managed up to 5 activities or tasks at a given time while
-                    under pressure</li>
-                  <li>Recommended and consulted with clients on the most
-                    appropriate graphic design for presentation</li>
-
-
-                  <h5>2023 - 2024</h5>
-                  <li>Created 4+ video activities within the given
-                    time</li>
-                  <li>Developed numerous school activities
-                    (photograpy/videograpy, 3d building and object, movie poster, help creating
-                    agri-bit app, and system exhibit and presentations).</li>
-                  <li>Logo Creator of ClearEvo, 2iiB, Agri-Bit, Pro at
-                    Crastinating, and CineSkwela</li>
-                  <li>1st runner-up in System Developers Award(BSCS-II) for
-                    Elements e-Gnite 2024: MC-CCS ICT EXPO 2024
-                    "Celebrating MC Centennary with Radiance of Instructor"
+                  <li><i class="bx bx-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Sex:</strong> <span>Male</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Birthday:</strong> <span>08, April, 2004</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Phone:</strong> <span>+63 948 1286 832</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Address:</strong> <span>Daet, Camarines Norte</span>
                   </li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Civil Status:</strong> <span>Single</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>College:</strong> <span>Mabini Colleges, Inc.</span>
+                  </li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Degree:</strong> <span>Master Degree</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Hometown:</strong> <span>Bacacay, Albay,
+                      Philippines</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Website:</strong><a href="https://github.com/Ahyan3"
+                      target="_blank">https://github.com/Ahyan3</a></li>
                 </ul>
               </div>
             </div>
           </div>
-
         </div>
-      </section><!-- End Resume Section -->
+      </div>
+    </section><!-- End About Section -->
 
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio section-bg">
-        <div class="container">
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Throughout my portfolio, you will notice my dedication to expanding my skills and knowledge base, as I
+            believe in the importance of continuously learning and adapting to new challenges that allows me to absorb
+            new information quickly and effectively.</p>
+        </div>
 
-          <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>
-
-              Throughout the whole year, I have actively sought out
-              opportunities to expand my knowledge and enhance my learning
-              skills, resulting in a well-rounded and distinguished portfolio.
-
-            </p>
+        <div class="grid skills-content center-skills">
+          <div class="grid-item" data-aos="fade-up">
+            <div class="skill">HTML, CSS, JavaScript</div>
+            <div class="skill">Java & Python</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Visual Basic.NET (VB.NET)</div>
           </div>
+          <div class="grid-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill">Adobe Illustrator & Photoshop</div>
+            <div class="skill">Canva & Figma</div>
+            <div class="skill">Cupcat</div>
+            <div class="skill">Microsoft PowerPoint, Word, Excel, etc.</div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Skills Section -->
 
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Prelim</li>
-                <li data-filter=".filter-card">Midterm</li>
-                <li data-filter=".filter-web">Prefinal</li>
-                <li data-filter=".filter-web1">Final</li>
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>As a BSCS student, I am eager to showcase my ability to work smart and efficiently, utilizing strategic
+            thinking and problem-solving skills to achieve optimal results. I excel at doing tasks within the given time
+            while studying under pressure, demonstrating my capacity to handle multiple responsibilities simultaneously
+            without compromising on quality.</p>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item">
+              <h4>Ryan Romano</h4>
+              <p><em>As a new graphic designer with a strong foundation in design principles and a passion for creating
+                  visually appealing content, I am eager to collaborate with a team to help bring brands to life through
+                  innovative designs.</em></p>
+              <ul>
+                <li>Daet, Camarines Norte, Philippines</li>
+                <li>+63 948 1286 832</li>
+                <li><a href="https://github.com/Ahyan3" target="_blank">https://github.com/Ahyan3</a></li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Elementary</h4>
+              <h5>2011 - 2016</h5>
+              <p><em>UP Teachers Village Elementary School</em></p>
+              <p><em>Public School, Division of Camarines Norte, Daet North District</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Junior High School</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>Alawihao National High School</em></p>
+              <p><em>Vinisitahan National High School </em></p>
+              <p>Public School, Division of Albay, Bacacay</p>
+              <p>A government secondary school that adheres to the standards mandated by the Department of Education</p>
+            </div>
+            <div class="resume-item">
+              <h4>Senior High School</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Camarines Norte National High School </em></p>
+              <p><em>Camambugan, Daet, Camarines Norte </em></p>
+              <ul>
+                <li>Learned in the design, development, and implementation of the graphic, layout, and production
+                  communication materials</li>
+                <li>Teacher favorite for making research</li>
+                <li>Honored student within 1st to 3rd quarter</li>
+                <li>Learned in Electronic Products Assembly & Servicing NC II</li>
               </ul>
             </div>
           </div>
 
-          <!-- ======= Prelim Section ======= -->
-          <div class="row portfolio-container" data-aos="fade-up"
-            data-aos-delay="100">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/act101.jpg" class="img-fluid"
-                  alt>
-                <div class="portfolio-links">
-                  <h4>Activity 101 (Shapes and Forms 101)</h4>
-                  <a href="assets/img/portfolio/act101.jpg"
-                    data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="Activity 101 (Shapes and Forms 101)"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
+          <div class="grid-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>College</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Mabini Colleges, Inc</em></p>
+              <p><em>Gov Panotes Ave, Daet, 4600 Camarines Norte</em></p>
+              <ul>
+                <li>Created 4+ design presentations and proposals a month for clients</li>
+                <li>Developed numerous school activities (photography, logos, brochures, presentations, system, and
+                  photo exhibit).</li>
+                <li>Managed up to 5 activities or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design for presentation</li>
+              </ul>
+              <h5>2023 - 2024</h5>
+              <ul>
+                <li>Created 4+ video activities within the given time</li>
+                <li>Developed numerous school activities (photography/videography, 3d building and object, movie poster,
+                  help creating agri-bit app, and system exhibit and presentations).</li>
+                <li>Logo Creator of ClearEvo, 2iiB, Agri-Bit, Pro at Crastinating, and CineSkwela</li>
+                <li>1st runner-up in System Developers Award(BSCS-II) for Elements e-Gnite 2024: MC-CCS ICT EXPO 2024
+                  "Celebrating MC Centennary with Radiance of Instructor"</li>
+              </ul>
+              <h5>2024 - 2025</h5>
+              <ul>
+                <li>Appointed as the BSCS Public Information Officer Batch 2024 - 2025</li>
+                <li>Developed numerous school activities (photography/videography, application and website).</li>
+                <li>Logo Creator of PERSA, Elderly Care+, eMovie, and Code Clipse</li>
+                <li>6th runner-up in System Showcase(BSCS-III) 2025: MC-CCS ICT EXPO 2025</li>
+                <li>Always a leader in the group</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Throughout my journey, I have actively sought out opportunities to expand my knowledge and enhance my
+            skills in design, programming, and technology, resulting in a diverse portfolio spanning personal, academic,
+            professional, and certified achievements.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter=".personal" class="filter-active">Portfolio</li>
+              <li data-filter=".school">School</li>
+              <li data-filter=".certificate">Certificate</li>
+              <li data-filter=".tesda">Tesda</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Personal Project -->
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/1.png" class="img-fluid" alt="Portfolio Image 1">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/1.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/2.png" class="img-fluid" alt="Portfolio Image 2">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/2.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/3.png" class="img-fluid" alt="Portfolio Image 3">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/3.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/4.png" class="img-fluid" alt="Portfolio Image 4">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/4.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/5.png" class="img-fluid" alt="Portfolio Image 5">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/5.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/6.png" class="img-fluid" alt="Portfolio Image 6">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/6.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/7.png" class="img-fluid" alt="Portfolio Image 7">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/7.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/8.png" class="img-fluid" alt="Portfolio Image 8">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/8.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/9.png" class="img-fluid" alt="Portfolio Image 9">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/9.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/10.png" class="img-fluid" alt="Portfolio Image 10">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/10.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/11.png" class="img-fluid" alt="Portfolio Image 11">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/11.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/12.png" class="img-fluid" alt="Portfolio Image 12">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/12.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/13.png" class="img-fluid" alt="Portfolio Image 13">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/13.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/14.png" class="img-fluid" alt="Portfolio Image 14">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/14.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/15.png" class="img-fluid" alt="Portfolio Image 15">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/15.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/16.png" class="img-fluid" alt="Portfolio Image 16">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/16.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/17.png" class="img-fluid" alt="Portfolio Image 17">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/17.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/18.png" class="img-fluid" alt="Portfolio Image 18">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/18.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/19.png" class="img-fluid" alt="Portfolio Image 19">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/19.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/20.png" class="img-fluid" alt="Portfolio Image 20">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/20.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/21.png" class="img-fluid" alt="Portfolio Image 21">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/21.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/22.png" class="img-fluid" alt="Portfolio Image 22">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/22.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/23.png" class="img-fluid" alt="Portfolio Image 23">
+              <button class="view-btn" onclick="openFullscreen('assets/img/portfolio/23.png')">View Fullscreen</button>
+            </div>
+          </div>
+
+          <!-- School Projects -->
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/2.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Total of 9 Project</h4>
               </div>
             </div>
+          </div>
 
-            <div class="row portfolio-container" data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/act102.jpg" class="img-fluid"
-                    alt>
-                  <div class="portfolio-links">
-                    <h4>Activity 102 (Working with Vanishing Points)</h4>
-                    <a href="assets/img/portfolio/act102.jpg"
-                      data-gallery="portfolioGallery" class="portfolio-lightbox"
-                      title="Activity 102 (Working with Vanishing Points)"><i
-                        class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i
-                        class="bx bx-link"></i></a>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/Screenshot 2025-05-15 025744.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Balane-Saspa Dental Apppointment System</h4>
+                <a href="assets/img/school/Screenshot 2025-05-15 025744.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="https://balane-saspa-dental-1.onrender.com/index.html" target="_blank" title="View Live Demo">
+                  <i class="bx bx-link-external"></i>
+                </a>
               </div>
+            </div>
+          </div>
 
-              <div class="row portfolio-container" data-aos="fade-up"
-                data-aos-delay="100">
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/act102(1).jpg"
-                      class="img-fluid" alt>
-                    <div class="portfolio-links">
-                      <h4>Activity 102 (Working with Vanishing Points)</h4>
-                      <a href="assets/img/portfolio/act102(1).jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Activity 102 (Working with Vanishing Points)"><i
-                          class="bx bx-plus"></i></a>
-                      <a href="portfolio-details.html" title="More Details"><i
-                          class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/Screenshot 2025-05-15 022754.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Encryption & Decryption</h4>
+                <a href="assets/img/school/Screenshot 2025-05-15 022754.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
-                <div class="row portfolio-container" data-aos="fade-up"
-                  data-aos-delay="100">
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/portfolio/act102(2).jpg"
-                        class="img-fluid" alt>
-                      <div class="portfolio-links">
-                        <h4>Activity 102 (Working with Vanishing Points)</h4>
-                        <a href="assets/img/portfolio/act102(2).jpg"
-                          data-gallery="portfolioGallery"
-                          class="portfolio-lightbox"
-                          title="Activity 102 (Working with Vanishing Points)"><i
-                            class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i
-                            class="bx bx-link"></i></a>
-                      </div>
-                    </div>
-                  </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/Screenshot 2025-05-15 023323.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Elderly Care+</h4>
+                <a href="assets/img/school/Screenshot 2025-05-15 023323.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="https://www.figma.com/proto/6Ehtg1OWotcdOIhsGEUd9Q/Elderly-Care---Home-for-Agent?page-id=0%3A1&node-id=2323-802&starting-point-node-id=2323%3A802&t=9shKhVFJGxb0224x-1"
+                  target="_blank" title="View Live Demo">
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <div class="row portfolio-container" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act103.jpg"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 103 (Create your own Building using
-                            perspective)</h4>
-                          <a href="assets/img/portfolio/act103.jpg"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox" title=Activity 103
-                            (Create your own Building using perspective)><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/Screenshot 2025-05-15 023637.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Redesign Mabini Colleges, Inc. Website</h4>
+                <a href="assets/img/school/Screenshot 2025-05-15 023637.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+                <a href="https://www.figma.com/proto/DbA3F0mcOYusKsiRnbARge/HCI-Activity-104--Redesign----Ahyan?page-id=0%3A1&node-id=171-2308&starting-point-node-id=171%3A2308&t=qhpbGooiWTwBmCpK-1"
+                  target="_blank" title="View Live Demo">
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                    <!-- ======= Midterm Section ======= -->
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act104.jpg"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 104 (Draw a Modern House)</h4>
-                          <a href="assets/img/portfolio/act104.jpg"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Activity 104 (Draw a Modern House)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/052997db-2aaa-4969-bf0e-5d2d4759fe56.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>PERSA: Personal Safety Application</h4>
+                <a href="assets/img/school/052997db-2aaa-4969-bf0e-5d2d4759fe56.jpeg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act105.jpg"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 105 : Digital Drawing (Your own
-                            Building)</h4>
-                          <a href="assets/img/portfolio/act105.jpg"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Activity 105 : Digital Drawing (Your own Building)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/Screenshot 2025-05-15 022637.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Dental Clinic Management System</h4>
+                <a href="assets/img/school/Screenshot 2025-05-15 022637.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act105(1).png"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 105 : Tinkercad (Your own Building)</h4>
-                          <a href="assets/img/portfolio/act105(1).png"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Activity 105 : Tinkercad (Your own Building)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/437127367_806280958045037_5934025866096159554_n.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Agri-Bit App</h4>
+                <a href="assets/img/school/437127367_806280958045037_5934025866096159554_n.jpg"
+                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Preview"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
-                    <!-- ======= Prefinal Section ======= -->
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act106.png"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 106 : (3D MODELING)</h4>
-                          <a href="assets/img/portfolio/act106.png"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Activity 106 : (3D MODELING)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/398411034_871884607853848_1378571746467978828_n.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>SchedMeUp</h4>
+                <a href="assets/img/school/398411034_871884607853848_1378571746467978828_n.png"
+                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Preview"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act107.png"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 107 : (Lathed 3D Objects)</h4>
-                          <a href="assets/img/portfolio/act107.png"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Activity 107 : (Lathed 3D Objects)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/school/349295001_1447054339372408_947641892061531614_n.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <h4>Agri-Bit Web App</h4>
+                <a href="assets/img/school/349295001_1447054339372408_947641892061531614_n.png"
+                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Preview"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/act110.png"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Activity 110 : Geometric Logo (Prefinals)</h4>
-                          <a href="assets/img/portfolio/act110.png"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Activity 110 : Geometric Logo (Prefinals)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <!-- Certificate -->
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificate/5.png" class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>Total of 4 Certificate</h4>
+              </div>
+            </div>
+          </div>
 
-                    <!-- ======= Final Section ======= -->
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web1">
-                      <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/town.png"
-                          class="img-fluid" alt>
-                        <div class="portfolio-links">
-                          <h4>Final Project (Town)</h4>
-                          <a href="assets/img/portfolio/town.png"
-                            data-gallery="portfolioGallery"
-                            class="portfolio-lightbox"
-                            title="Final Project (Town)"><i
-                              class="bx bx-plus"></i></a>
-                          <a href="portfolio-details.html"
-                            title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificate/IMG20240511213614.jpg" class="img-fluid"
+                alt="2iiB 1st Runner-Up System Developers Award (BSCS-II)">
+              <div class="portfolio-links">
+                <h4>2iiB 1st Runner-Up System Developers Award (BSCS-II) Certificate of Excellence</h4>
+              </div>
+            </div>
+          </div>
 
-                  </div>
-                </section><!-- End Portfolio Section -->
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificate/TypingCertification.png" class="img-fluid"
+                alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>Typing Test Certification</h4>
+              </div>
+            </div>
+          </div>
 
-                <!-- ======= Contact Section ======= -->
-                <section id="contact" class="contact">
-                  <div class="container">
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/certificate/Cisco/_certificate_ahyanromano02-gmail-com_d3a3d19d-57ce-494b-b502-42929ec79634.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>JavaScript Essentials 2</h4>
+              </div>
+            </div>
+          </div>
 
-                    <div class="section-title">
-                      <h2>Contact</h2>
-                      <p></p>
-                    </div>
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificate/Cisco/JavaScriptEssentials2Update20250423-25-3z9c3u.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>Statement of Achievement</h4>
+              </div>
+            </div>
+          </div>
 
-                    <div class="row" data-aos="fade-in">
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificate/IMG_20250514_134512.jpg" class="img-fluid"
+                alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>Scroll to Skill</h4>
+              </div>
+            </div>
+          </div>
 
-                      <div class="col-lg-5 d-flex align-items-stretch">
-                        <div class="info">
-                          <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Location:</h4>
-                            <p>4W4F+GFQ Daet, Camarines Norte</p>
-                          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item certificate">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificate/IMG_20250514_134455.jpg" class="img-fluid"
+                alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>Certificate of Commendation</h4>
+              </div>
+            </div>
+          </div>
 
-                          <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>ahyanromano02@gmail.com</p>
-                          </div>
+          <!-- Tesda -->
 
-                          <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+63 948 1286 832</p>
-                          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img src="assets/img/tesda/TESDA.png" class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4>Total of 19 Certificate</h4>
+              </div>
+            </div>
+          </div>
 
-                          <div class="map-container"
-                            style="text-align: center;">
-                            <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.5055123315396!2d122.92115947511265!3d14.106342688986288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398ae57889668c7%3A0x273fbd85e96254ca!2s4W4F%2BGFQ%2C%20Daet%2C%20Camarines%20Norte%2C%20Philippines!5e0!3m2!1sen!2sus!4v1685279551177!5m2!1sen!2sus"
-                              width="1000"
-                              height="1000"
-                              style="border:0; width: 1000px; height: 100 0px;"
-                              allowfullscreen
-                              loading="lazy"
-                              referrerpolicy="no-referrer-when-downgrade"
-                              frameborder="0">
-                            </iframe>
-                          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Computer System Servicing NC II/Certificate_of_Completion-Introduction-to-CSS.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                          <!-- <div
-                        class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post"
-                          role="form" class="php-email-form">
-                          <div class="row">
-                            <div class="form-group col-md-6">
-                              <label for="name">Your Name</label>
-                              <input type="text" name="name"
-                                class="form-control" id="name" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="name">Your Email</label>
-                              <input type="email" class="form-control"
-                                name="email" id="email" required>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control"
-                              name="subject" id="subject" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="name">Message</label>
-                            <textarea class="form-control" name="message"
-                              rows="10" required></textarea>
-                          </div>
-                          <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been
-                              sent. Thank you!</div>
-                          </div>
-                          <div class="text-center"><button type="submit">Send
-                              Message</button></div>
-                        </form>
-                      </div> -->
-                        </div>
-                      </section><!-- End Contact Section -->
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Computer System Servicing NC II/Certificate_of_Completion-Installing-and-Configuring-Computer-Systems.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                    </main><!-- End #main -->
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Computer System Servicing NC II/Certificate_of_Completion-Setting-Up-Computer-Networks.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                    <a href="#"
-                      class="back-to-top d-flex align-items-center justify-content-center"><i
-                        class="bi bi-arrow-up-short"></i></a>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Computer System Servicing NC II/Certificate_of_Completion-Setting-Up-Computer-Servers.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                    <!-- Vendor JS Files -->
-                    <script
-                      src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-                    <script src="assets/vendor/aos/aos.js"></script>
-                    <script
-                      src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                    <script
-                      src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-                    <script
-                      src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-                    <script
-                      src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-                    <script src="assets/vendor/typed.js/typed.min.js"></script>
-                    <script
-                      src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-                    <script
-                      src="assets/vendor/php-email-form/validate.js"></script>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Electrical Installation and Maintenance NC II/Certificate_of_Completion-Introduction-to-Electrical-Installation-and-Maintenance.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                    <!-- Template Main JS File -->
-                    <script src="assets/js/main.js"></script>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Electrical Installation and Maintenance NC II/Certificate_of_Completion-Perfoming-Roughing-In-Activities,Wiring-and-Cabling-Works-for-Single-Phase-Distribution,Power,Lighting-and-Auxiliary-Systems.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                  </body>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Electrical Installation and Maintenance NC II/Certificate_of_Completion-Installing-Electrical-Protective-Devices-for-Distribution,Power,Lightning-Protection-and-Grounding-Systems.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
 
-                </html>
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Electrical Installation and Maintenance NC II/Certificate_of_Completion-Installing-Wiring-Devices-for-Floor-and-Wall-Mounted-Outlets,Lighting-Fixtures,Switches-and-Auxiliary-Outlets.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Content Creation (Social Media) Level III/Certificate_of_Completion-Introduction-to-Content-Creation.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Content Creation (Social Media) Level III/Certificate_of_Completion-Creating-Concepts-for-Social-Media.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Content Creation (Social Media) Level III/Certificate_of_Completion-Translating-Concepts-into-Multimedia-Contents.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Content Creation (Social Media) Level III/Certificate_of_Completion-Propagating-Content.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completion-Introduction-to-Visual-Graphic-Design.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completion-Developing-Designs-for-a-Logo.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completion-Developing-Designs-for-Print-Media.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completion-Developing-Designs-for-User-Experience.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completio-Developing-Designs-for-User-Interface.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completion-Developing-Designs-for-Product-Packaging.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item tesda">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/tesda/Visual Graphic Design NC III/Certificate_of_Completion-Designing-Booth-and-Product-Window-Display.png"
+                class="img-fluid" alt="Computer System Servicing NC II">
+              <div class="portfolio-links">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fullscreen Overlay -->
+        <div class="fullscreen-overlay" id="fullscreenOverlay">
+          <button class="close-btn" onclick="closeFullscreen()">✕</button>
+          <img id="fullscreenImage" src="" alt="Fullscreen Image">
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact" tabindex="0">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="grid" data-aos="fade-in">
+          <div class="grid-item align-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bx bx-map"></i>
+                <h4>Location:</h4>
+                <p>4W4F+GFQ Daet, Camarines Norte</p>
+              </div>
+              <div class="email">
+                <i class="bx bx-envelope"></i>
+                <h4>Email:</h4>
+                <p>ahyanromano02@gmail.com</p>
+              </div>
+              <div class="phone">
+                <i class="bx bx-phone"></i>
+                <h4>Call:</h4>
+                <p>+63 948 1286 832</p>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.5055123315396!2d122.92115947511265!3d14.106342688986288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398ae57889668c7%3A0x273fbd85e96254ca!2s4W4F%2BGFQ%2C%20Daet%2C%20Camarines%20Norte%2C%20Philippines!5e0!3m2!1sen!2sus!4v1685279551177!5m2!1sen!2sus"
+                style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        © Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top flex align-center justify-center"><i class="bx bx-arrow-up"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="emailConfig.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="contact.php"></script>
+
+  <script>
+    function openFullscreen(imageSrc) {
+      const overlay = document.getElementById('fullscreenOverlay');
+      const fullscreenImage = document.getElementById('fullscreenImage');
+      fullscreenImage.src = imageSrc;
+      overlay.style.display = 'flex';
+    }
+
+    function closeFullscreen() {
+      const overlay = document.getElementById('fullscreenOverlay');
+      overlay.style.display = 'none';
+    }
+
+    // Close overlay when clicking outside the image
+    document.getElementById('fullscreenOverlay').addEventListener('click', function(event) {
+      if (event.target === this) {
+        closeFullscreen();
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const filters = document.querySelectorAll("#portfolio-flters li");
+      const items = document.querySelectorAll(".portfolio-item");
+
+      filters.forEach(filter => {
+        filter.addEventListener("click", function () {
+          filters.forEach(f => f.classList.remove("filter-active"));
+          this.classList.add("filter-active");
+
+          const filterValue = this.getAttribute("data-filter");
+
+          items.forEach(item => {
+            if (filterValue === "*") {
+              item.style.display = "block";
+            } else {
+              if (item.classList.contains(filterValue.substring(1))) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            }
+          });
+        });
+      });
+
+      document.querySelector('#portfolio-flters li.filter-active').click();
+    });
+  </script>
+</body>
+
+</html>
